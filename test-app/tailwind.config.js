@@ -5,7 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
+      fontFamily: {
+        kolker: ['Kolker Brush', 'cursive'],
+      }
     },
   },
   plugins: [],
