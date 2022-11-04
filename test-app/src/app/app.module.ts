@@ -7,6 +7,8 @@ import { NewComponentComponent } from './new-component/new-component.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { BannerComponent } from './banner/banner.component';
 import { FormComponent } from './form/form.component';
+import { OurTeamComponent } from './our-team/our-team.component';
+import { CustomerServiceComponent } from './customer-service/customer-service.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { FormComponent } from './form/form.component';
     NewComponentComponent,
     NavigationBarComponent,
     BannerComponent,
-    FormComponent
+    FormComponent,
+    OurTeamComponent,
+    CustomerServiceComponent
   ],
   imports: [
     BrowserModule,
