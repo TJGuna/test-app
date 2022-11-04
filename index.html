@@ -1,17 +1,556 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>TestApp</title>
-  <base href="/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-  hello
+    <!-- Navigation Start -->
+    <div class=" w-full h-[83px] relative">
+      <div class="flex justify-between">
+
+        <div class="flex justify-around">
+          <div class="w-20">
+            <div class="flex justify-around items-center h-[83px]">
+              <img src="./img/logo.jpeg" alt="CloudParallax Logo">
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="flex justify-around text-3xl italic font-bold items-center h-[83px]">
+              CloudParallax
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-around invisible md:visible">
+          <div class="w-20">
+            <div class="flex justify-around items-center h-[83px]">
+              Home
+            </div>
+          </div>
+          <div class="w-20">
+            <div class="flex justify-around items-center h-[83px]">
+              About
+            </div>
+          </div>
+          <div class="w-20">
+            <div class="flex justify-around items-center h-[83px]">
+              Services
+            </div>
+          </div>
+          <div class="w-20">
+            <div class="flex justify-around items-center h-[83px]">
+              Contact
+            </div>
+          </div>
+          <div class="w-20">
+            <div class="flex justify-around items-center h-[83px]">
+              Feedback
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="visible md:invisible  absolute right-7 top-7 ">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+      </div>
+    </div>
+    <!-- Navigation 1 End -->
+
+  <!-- Banner Start -->
+  <div>
+    <div class="bg-[url('./img/purplebg.jpg')] h-[486px] w-full grid place-items-center">
+      <div class="grid place-items-stretch text-center h-[294px]">
+
+        <div class="text-white font-kolker text-[70px] font-[700] w-full items-center">Learn to Code</div>
+        <div class="text-[#FFC0C7] text-[21px] font-sans-serif font-[700]">With the world's largest web developer site.
+        </div>
+        <div class="flex h-[47px]">
+          <input
+            class="placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-l-full py-2 pl-9 pr-3 shadow-sm focus:outline-none sm:text-sm"
+            placeholder="Search for anything..." type="text" name="search" />
+          <button class="bg-purple-500 flex justify-center items-center text-white rounded-r-full  w-[100px]"
+            type="submit"><i class="fa fa-search"></i><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg></button>
+        </div>
+        <div class="text-white text-[23px] font-sans-serif font-[700] hover:text-purple-600 underline"><a
+            href="https://www.w3schools.com/">Not Sure Where To Begin?</a></div>
+      </div>
+    </div>
+    <div></div>
+  </div>
+  <!-- Banner End -->
+
+  <!-- Task 4th November Start -->
+  <div class="bg-sky-100 grid grid-cols-3 gap-1 py-2">
+    <div class="bg-white shadow-sm rounded-l-lg p-3">
+      <div>Total Subscribers</div>
+      <div class="flex justify-between">
+        <div class="grid grid-cols-2 space-x-2">
+          <div class="text-2xl text-purple-800 ">71,897</div>
+          <div class="text-xs mt-3">from 70,946</div>
+        </div>
+        <div class="grid grid-cols-2 bg-green-100 rounded-2xl items-center px-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" />
+          </svg>          
+          <div>12%</div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white shadow-sm p-3">
+      <div>Avg. Open Rate</div>
+      <div class="flex justify-between">
+        <div class="grid grid-cols-2 space-x-2">
+          <div class="text-2xl text-purple-800 ">58.16%</div>
+          <div class="text-xs mt-3">from 56.14%</div>
+        </div>
+        <div class="grid grid-cols-2 bg-green-100 rounded-2xl items-center px-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" />
+          </svg>          
+          <div>12%</div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white shadow-sm rounded-r-lg p-3">
+      <div>Avg. Click Rate</div>
+      <div class="flex justify-between">
+        <div class="grid grid-cols-2 space-x-2">
+          <div class="text-2xl text-purple-800 ">24.57%</div>
+          <div class="text-xs mt-3">28.62%</div>
+        </div>
+        <div class="grid grid-cols-2 bg-red-100 rounded-2xl items-center px-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+          </svg>
+          <div>12%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Task 4th November Start -->
+
+  <!-- Service Specialize in Start -->
+  <section class="bg-gradient-to-t to-purple-300 from-purple-50 h-[650px] grid place-items-center">
+    <div class="container h-[600px] w-[800px] justify-center">
+      <div class="flex flex-center">
+        <div class="w-full px-4">
+          <div class="text-center mx-auto mb-[60px] lg:mb-10 max-w-[510px]">
+            <span class="font-semibold text-pink-500 text-lg mb-2 block">
+              service
+            </span>
+            <h2 class=" font-bold text-3xl sm:text-4xl md:text-[40px] text-dark mb-4 ">
+              Specializing In
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between -mx-4">
+        <div class="w-full text-center px-4">
+          <div class="border-2 border-blue-100 bg-white rounded-md relative z-10 overflow-hidden  py-10 px-8 sm:p-10 ">
+            <img src="./img/img1.png" alt="">
+            <span class="font-semibold text-lg block mb-4">
+              Logo & Branding Services
+            </span>
+            <p class="text-base  text-body-color pb-6 border-[#F2F2F2]">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+            <div class="hover:text-blue-700 text-base text-body-color border-[#F2F2F2]">
+              <a href="javascript:void(0)">Learn More ></a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full text-center px-4">
+          <div class="border-2 border-blue-100 bg-white rounded-md relative z-10 overflow-hidden  py-10 px-8 sm:p-10 ">
+            <img src="./img/img2.png" alt="">
+            <span class="font-semibold text-lg block mb-4">
+              Website Design & Development
+            </span>
+            <p class="text-base  text-body-color pb-6 border-[#F2F2F2]">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+            <div class="hover:text-blue-700 text-base text-body-color border-[#F2F2F2]">
+              <a href="javascript:void(0)">Learn More ></a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full text-center px-4">
+          <div class="border-2 border-blue-100 bg-white rounded-md relative z-10 overflow-hidden  py-10 px-8 sm:p-10 ">
+            <img src="./img/img3.png" alt="">
+            <span class="font-semibold text-lg block mb-4">
+              Mobile App Develpoment
+            </span>
+            <p class="text-base  text-body-color pb-6 border-[#F2F2F2]">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+            <div class="hover:text-blue-700 text-base text-body-color border-[#F2F2F2]">
+              <a href="javascript:void(0)">Learn More ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Service Specialize in End -->
+
+  <!-- Application Form Start -->
+  <div class="">
+    <div class="bg-gradient-to-t to-purple-50 from-purple-300 h-[1000px] grid place-items-center ">
+      <div class="">
+
+        <form action="/action_page.php" class="flex flex-col space-y-6">
+          <div class="text-3xl font-bold text-center">Application Form</div>
+          <div class="flex space-x-5">
+            <div class="relative ">
+              <input type="text" id="first_name"
+                class=" block px-2.5 pb-2.5 pt-4 text-sm text-black border border-gray-300 rounded-lg border-1 w-60  appearance-none focus:ring-0 focus:border-blue-200 peer bg-white"
+                placeholder=" " />
+              <label for="first_name"
+                class="absolute text-sm bg-white text-black  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0]  px-2 peer-focus:px-2 peer-focus:text-blue-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">First
+                Name</label>
+            </div>
+            <div class="relative">
+              <input type="text" id="last_name"
+                class="block px-2.5 pb-2.5 pt-4 text-sm text-black border border-gray-300 rounded-lg border-1 w-60 appearance-none focus:ring-0 focus:border-blue-900 peer bg-white"
+                placeholder=" " />
+              <label for="floating_outlined"
+                class="absolute text-sm bg-white text-black  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0]  px-2 peer-focus:px-2 peer-focus:text-blue-900 peer-focus:dark:text-blue-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Last
+                Name</label>
+            </div>
+          </div>
+          <div class="relative">
+            <input type="date" id="date_of_birth"
+              class="block px-2.5 pb-2.5 pt-4 text-sm text-black border border-gray-300  rounded-lg border-1 w-60 appearance-none focus:ring-0 focus:border-blue-900 peer bg-white"
+              placeholder=" " />
+            <label for="date_of_birth"
+              class="absolute text-sm bg-white text-black  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0]  px-2 peer-focus:px-2 peer-focus:text-blue-900 peer-focus:dark:text-blue-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Date
+              of Birth</label>
+          </div>
+          <div class="relative">
+            <input type="email" id="email"
+              class="block px-2.5 pb-2.5 pt-4 text-sm text-black border border-gray-300  rounded-lg border-1 w-60 appearance-none focus:ring-0 focus:border-blue-900 peer bg-white"
+              placeholder=" " />
+            <label for="email"
+              class="absolute text-sm bg-white text-black  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0]  px-2 peer-focus:px-2 peer-focus:text-blue-900 peer-focus:dark:text-blue-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Email</label>
+          </div>
+          <div class="relative">
+            <input type="password" id="password"
+              class="block px-2.5 pb-2.5 pt-4 text-sm text-black border border-gray-300  rounded-lg border-1 w-60 appearance-none focus:ring-0 focus:border-blue-900 peer bg-white"
+              placeholder=" " />
+            <label for="password"
+              class="absolute text-sm bg-white text-black  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0]  px-2 peer-focus:px-2 peer-focus:text-blue-900 peer-focus:dark:text-blue-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Password</label>
+          </div>
+          <div class="flex space-x-3">
+            <div>
+              <input id="male" class="peer/draft" type="radio" name="status" checked />
+              <label for="male" class="peer-checked/draft:text-sky-500">Male</label>
+            </div>
+            <div>
+
+              <input id="female" class="peer/published" type="radio" name="status" />
+              <label for="female" class="peer-checked/published:text-sky-500">Female</label>
+            </div>
+          </div>
+
+          <label for="message" class="block mb-2 text-sm font-medium text-gray-500">Type Your
+            Address</label>
+          <textarea id="message" rows="4"
+            class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 "
+            placeholder="eg: No.1 Abc street, Dehiwala, Colombo"></textarea>
+
+          <div class="relative">
+            <input type="text" id="Education_qualification"
+              class="block px-2.5 pb-2.5 pt-4 text-sm text-black border border-gray-300 rounded-lg border-1 w-60 appearance-none focus:ring-0 focus:border-blue-900 peer bg-white"
+              placeholder=" " />
+            <label for="Education_qualification"
+              class="absolute text-sm bg-white text-black  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0]  px-2 peer-focus:px-2 peer-focus:text-blue-900 peer-focus:dark:text-blue-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Educational
+              Qualification</label>
+          </div>
+          <div>
+            <label for="married_status" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Select
+              your Marital
+              status</label>
+            <select id="married_status"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500">
+              <option selected="">Choose a status</option>
+              <option value="Married">Married</option>
+              <option value="Widowed">Widowed</option>
+              <option value="Seperated">Seperated</option>
+              <option value="Divorced">Divorced</option>
+              <option value="Single">Single</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="married_status" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Select
+              your Job
+            </label>
+            <select id="married_status"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500">
+              <option selected="">Choose a job</option>
+              <option value="Software Engineer">Software Engineer</option>
+              <option value="Cloud Engineer">Cloud Engineer</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="married_status" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Select
+              your Job Position
+            </label>
+            <select id="married_status"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500">
+              <option selected="">Choose the position</option>
+              <option value="Front End Developer">Front End Developer</option>
+              <option value="Back End Developer">Back End Developer</option>
+              <option value="Full Stack Developer">Full Stack Engineer</option>
+              <option value="Software test engineer">Software test engineer</option>
+              <option value="Javascript engineer">Javascript engineer</option>
+              <option value="Applications engineer">Applications engineer</option>
+            </select>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Application Form End -->
+
+  <!-- Our Team Start-->
+  <div>
+    <div class="bg-gradient-to-t to-purple-300 from-purple-50 resize flex flex-col space-y-4  p-5">
+      <div class="text-xl font-bold">Our Team</div>
+      <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit taque corporis culpa.</div>
+      <div class="">
+        <div class="space-y-6">
+          <div class="flex space-x-5 ">
+            <div class="w-full">
+              <img class="object-cover" src="./img/per1.jpg" alt="">
+              <div>Front-end Developer</div>
+              <div>Lindsay Walton</div>
+              <div class="flex ">
+                <i class="fi fi-rr-user text-gray-400 text-xl"></i>
+                <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                  <path
+                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                  </path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <div class="w-full">
+              <img class="object-cover" src="./img/per2.jpg" alt="">
+              <div>Courtney Henry</div>
+              <div>Designer</div>
+              <div class="flex ">
+                <img class="object-cover h-7 text-gray-400" src="./../assets/svg/scholler.svg" alt="">
+                <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                  <path
+                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                  </path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <div class="w-full">
+              <img class="object-cover" src="./img/per3.jpg" alt="">
+              <div>Tom Cook</div>
+              <div>Director, Product Development</div>
+              <div class="flex ">
+                <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                  <path
+                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                  </path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222">
+                  </path>
+                </svg>
+                <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                  <path
+                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                  </path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222">
+                  </path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="flex space-x-5 ">
+            <div class="w-full">
+              <img class="object-cover rounded-2xl" src="./img/per1.jpg" alt="">
+              <div>Lindsay Walton</div>
+              <div>Front-end Developer</div>
+              <div class="flex ">
+                <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                  <path
+                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                  </path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222">
+                  </path>
+                </svg>
+                <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                  <path
+                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                  </path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <div class="w-full">
+              <img class="object-cover" src="./img/per2.jpg" alt="">
+              <div>Courtney Henry</div>
+              <div>Designer</div>
+              <div class="flex ">
+                <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                  <path
+                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                  </path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222">
+                  </path>
+                </svg>
+                <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                  <path
+                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                  </path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <div class="w-full">
+              <img class="object-cover" src="./img/per3.jpg" alt="">
+              <div>Tom Cook</div>
+              <div>Director, Product Development</div>
+              <div class="flex ">
+                <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                  <path
+                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                  </path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222">
+                  </path>
+                </svg>
+                <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                  <path
+                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                  </path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222">
+                  </path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Our Team End -->
+
+  <!-- Customer Service Start -->
+  <div class="bg-white resize flex flex-col space-y-12 py-7">
+    <div class="flex align-middle">
+      <div class="w-1/2 p-8 space-y-5 align-middle">
+        <div class="font-bold text-2xl">We built our business on a great customer service</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rem voluptates qui ipsum sit facere ex
+          provident, voluptatibus, quidem vel quo perspiciatis molestias aut incidunt pariatur, debitis deleniti
+          necessitatibus repellendus!</div>
+      </div>
+      <img class="w-1/2 object-cover rounded-full" src="./img/laptop.jpg" alt="">
+    </div>
+    <div class="flex flex-row space-x-5 px-8">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+        </svg>
+
+        <div>Free Shiping</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus aspernatur officia modi.</div>
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+        </svg>
+
+        <div>10-year warranty</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus aspernatur officia modi.</div>
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+        </svg>
+
+        <div>Exchange</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus aspernatur officia modi.</div>
+      </div>
+    </div>
+  </div>
+  <!-- Customer service End -->
+
+  <!-- Footer Start -->
+  <div class="bg-red-200 w-full h-[83px]">
+    <div class="flex justify-around items-center h-[83px] text-sky-600">
+      <div>Terms</div>
+      <div>Privacy</div>
+      <div>Security</div>
+      <div>Status</div>
+      <div>Docs</div>
+      <div>Pricing</div>
+      <div>Blog</div>
+      <div>About</div>
+    </div>
+  </div>
+
+  <div class="container mx-auto p-8">
+    <h1>Joom Triggers</h1>
+    <h2>© 2022 JoomTriggers Labs Inc. All rights reserved.</h2>
+  </div>
+  <!-- Footer End -->
+
 </body>
+
 </html>
