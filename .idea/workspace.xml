@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f5a4854d-b01d-4aae-a96b-b4c32b28942e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/test-app/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/banner/banner.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/banner/banner.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/banner/banner.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/banner/banner.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/customer-service/customer-service.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/customer-service/customer-service.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/customer-service/customer-service.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/customer-service/customer-service.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/form/form.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/form/form.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/form/form.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/form/form.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/navigation-bar/navigation-bar.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/navigation-bar/navigation-bar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/navigation-bar/navigation-bar.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/navigation-bar/navigation-bar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/new-component/new-component.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/new-component/new-component.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/new-component/new-component.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/new-component/new-component.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/our-team/our-team.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/our-team/our-team.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/our-team/our-team.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/app/our-team/our-team.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/assets/img/pic1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/assets/img1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/assets/img2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/assets/img3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/assets/laptop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/assets/linkedin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/assets/logo.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/assets/per1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/assets/per2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/assets/per3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/assets/pic1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/assets/svg/scholler.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/assets/twitter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/tsconfig.spec.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GwMWmdPrvkAmAsSR9F61Qo6bhz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mr.tj/Documents/GitHub/test-app&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/mr.tj/Documents/GitHub/test-app/test-app/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5a4854d-b01d-4aae-a96b-b4c32b28942e" name="Changes" comment="" />
+      <created>1667295226378</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667295226378</updated>
+      <workItem from="1667295229061" duration="3928000" />
+      <workItem from="1667539051107" duration="1588000" />
+      <workItem from="1667540850539" duration="54000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
