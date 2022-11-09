@@ -38,10 +38,10 @@
                 <select id="priority"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500">
                     <option selected="">Choose Priority</option>
-                    <option value="Health">Health</option>
-                    <option value="Security">Security</option>
-                    <option value="Government">Government</option>
-                    <option value="Others">Others</option>
+                    <option value=4>Health</option>
+                    <option value=3>Security</option>
+                    <option value=2>Government</option>
+                    <option value=1>Others</option>
                 </select>
 
             </div>
@@ -51,11 +51,13 @@
         <button onclick="myFunction()" class="bg-blue-100">Show inputs</button>
         <p id="demo"></p>
         <div>
-            Hi
+            break 1
         </div>
         <p id="demo1"></p>
-
-
+        <div>
+            break 2
+        </div>
+        <p id="demo2"></p>
 
         <script>
             function myFunction() {
@@ -66,14 +68,13 @@
                 const fuelPumpingDetails = { name: x, carNum: y, priority: z };
                 document.getElementById("demo1").innerHTML = fuelPumpingDetails.name;
             }
-        </script>
-
-        <script>
             let test1 = '{"carUsers":[' +
-                '{"name":"Muriel","carNum":"Aa123","priority":"Health" }]}';
+                '{"name":"Muriel","carNum":"Aa123","priority":4 }]}';
+
+                // test1.push(x , y, z);
 
             const obj = JSON.parse(test1);
-            document.getElementById("demo").innerHTML =
+            document.getElementById("demo2").innerHTML =
                 obj.carUsers[0].name + " " + obj.carUsers[0].carNum + " " + obj.carUsers[0].priority;
         </script>
 
