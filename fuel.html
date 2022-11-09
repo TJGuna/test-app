@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="space-y-6 p-7 text-center">
+        <h1 class="text-3xl font-bold ">
+            Fuel Application Form
+        </h1>
+        <div class="grid grid-cols-1 space-y-6">
+            <div class="relative ">
+                <input type="text" id="name"
+                    class=" block px-2.5 pb-2.5 pt-4 text-sm text-black border border-gray-300 rounded-lg border-1 w-60  appearance-none focus:ring-0 focus:border-blue-200 peer bg-white"
+                    placeholder=" " />
+                <label for="name"
+                    class="absolute text-sm bg-white text-black  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0]  px-2 peer-focus:px-2 peer-focus:text-blue-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Name</label>
+            </div>
+            <div class="relative ">
+                <input type="text" id="carNum"
+                    class=" block px-2.5 pb-2.5 pt-4 text-sm text-black border border-gray-300 rounded-lg border-1 w-60  appearance-none focus:ring-0 focus:border-blue-200 peer bg-white"
+                    placeholder=" " />
+                <label for="car_no"
+                    class="absolute text-sm bg-white text-black  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0]  px-2 peer-focus:px-2 peer-focus:text-blue-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Car
+                    Number</label>
+            </div>
+            <div>
+                <label for="priority" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Select
+                    your Priority
+                    status</label>
+                <select id="priority"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected="">Choose Priority</option>
+                    <option value="Health">Health</option>
+                    <option value="Security">Security</option>
+                    <option value="Government">Government</option>
+                    <option value="Others">Others</option>
+                </select>
+
+            </div>
+        </div>
+
+
+        <button onclick="myFunction()" class="bg-blue-100">Show inputs</button>
+        <p id="demo"></p>
+        <div>
+            Hi
+        </div>
+        <p id="demo1"></p>
+
+
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("name").value;
+                var y = document.getElementById("carNum").value;
+                var z = document.getElementById("priority").value;
+                document.getElementById("demo").innerHTML = "Car Owner Name: " + x + "<br>" + "Car Number: " + y + "<br>" + "Priority: " + z;
+                const fuelPumpingDetails = { name: x, carNum: y, priority: z };
+                document.getElementById("demo1").innerHTML = fuelPumpingDetails.name;
+            }
+        </script>
+
+        <script>
+            let test1 = '{"carUsers":[' +
+                '{"name":"","carNum":"","priority":"" },' +
+                '{"name":"","carNum":"","priority":"" },' +
+                '{"name":"","carNum":"","priority":"" }]}';
+
+            const obj = JSON.parse(text);
+            document.getElementById("demo").innerHTML =
+                obj.employees[1].firstName + " " + obj.employees[1].lastName;
+        </script>
+
+    </div>
+
+</body>
+
+</html>
