@@ -70,13 +70,11 @@
 
         <script>
             let test1 = '{"carUsers":[' +
-                '{"name":"","carNum":"","priority":"" },' +
-                '{"name":"","carNum":"","priority":"" },' +
-                '{"name":"","carNum":"","priority":"" }]}';
+                '{"name":"Muriel","carNum":"Aa123","priority":"Health" }]}';
 
-            const obj = JSON.parse(text);
+            const obj = JSON.parse(test1);
             document.getElementById("demo").innerHTML =
-                obj.employees[1].firstName + " " + obj.employees[1].lastName;
+                obj.carUsers[0].name + " " + obj.carUsers[0].carNum + " " + obj.carUsers[0].priority;
         </script>
 
     </div>
