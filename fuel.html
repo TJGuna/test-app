@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>javascript</title>
+    </head>
+
+    <body>
+        <div>
+            <form class="bg-emerald-100 max-w-sm rounded px-6 pt-6 pb-6">
+                <div>
+                    <label for="Name" class="" >Name</label>
+                </div>
+                <div>
+                    <input type="text" id="Name" class="" placeholder="">
+                    
+                </div>
+                <div>
+                <label for="Vehicle number" class="">
+                    Vehicle number
+                </label>
+                </div>
+                <div>
+                    <input type="text" id="vehicleNumber" class="" placeholder="">
+                </div>
+               
+                <div>
+                    <label for="priority" class="">Select your priority</label>
+                    <select id="priority" class="">
+                        <option value="selected">Choose priority</option>
+                        <option value="Health">Health</option>
+                        <option value="Security">Security</option>
+                        <option value="Government servants">Government servants</option>
+                        <option value="Publics">Publics</option>
+                    </select>
+                    
+                </div>
+            </form>
+
+        </div>
+       
+        <button onclick="displayname()">Details</button>
+        <p id="demo"> </p>
+        <script>
+            function displayname(){
+                var x = document.getElementById("Name").value;
+                var y = document.getElementById("vehicleNumber").value;
+                var z = document.getElementById("Select your priority").value;
+
+                document.getElementById("demo").innerHTML = z;
+            }
+                
+
+            
+        </script>
+    </body>
+
+    </html>
