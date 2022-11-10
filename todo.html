@@ -32,14 +32,24 @@
         <div>
             Pending Todo Items
         </div>
-        <div>
-            <p id="listItems"></p>
-        </div>
-        <div>
-            <p id="demo"></p>
-        </div>
+        <table>
+            <tr>
+                <th>
+                    item]
+                </th>
+                <th>
+                    item2
+                </th>
+            </tr>
+            <tr>
+                <td id="demo">1</td>
+            </tr>
+            
+
+        </table>
+        
         <script>
-            const toDoList = []
+            let toDoList = []
             
 
             function add() {
@@ -49,12 +59,17 @@
                 let txt = "";
                 toDoList.forEach(myFunction);
                 document.getElementById("demo").innerHTML = txt;
-
+                
+                
                 function myFunction(value, index, array) {
-                    txt += value  + " Edit " + " Delete" + "<br>";
+                    txt += value + "  <button onclick=edit("+index+") class='m-2 py-3 rounded-[10px] px-6 bg-green-300'>edit</button> <br>";
                 }
+                
                 console.log(toDoList);
             }
+            function edit(index){
+                    console.log('index'+index);
+                }
         </script>
     </div>
 </body>
