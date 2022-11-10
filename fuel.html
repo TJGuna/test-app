@@ -15,7 +15,7 @@
                     <label for="Name" class="" >Name</label>
                 </div>
                 <div>
-                    <input type="text" id="Name" class="" placeholder="">
+                    <input type="text" id="name" class="" placeholder="">
                     
                 </div>
                 <div>
@@ -31,10 +31,10 @@
                     <label for="priority" class="">Select your priority</label>
                     <select id="priority" class="">
                         <option value="selected">Choose priority</option>
-                        <option value="Health">Health</option>
-                        <option value="Security">Security</option>
-                        <option value="Government servants">Government servants</option>
-                        <option value="Publics">Publics</option>
+                        <option value=4>Health</option>
+                        <option value=3>Security</option>
+                        <option value=2>Government servants</option>
+                        <option value=1>Publics</option>
                     </select>
                     
                 </div>
@@ -46,14 +46,25 @@
         <p id="demo"> </p>
         <script>
             function displayname(){
-                var x = document.getElementById("Name").value;
-                var y = document.getElementById("vehicleNumber").value;
-                var z = document.getElementById("Select your priority").value;
-
-                document.getElementById("demo").innerHTML = z;
-            }
                 
 
+                var x = document.getElementById("name").value;
+                var y = document.getElementById("vehicleNumber").value;
+                var z = document.getElementById("priority").value;
+
+                document.getElementById("demo").innerHTML = x + "<br>" + y + "<br>" + z;
+                
+                const myObj = {name:x, vehicleNumber:y, priority:z };
+                document.getElementById("demo").innerHTML = myObj.name;
+           
+            }
+                let text = '{"users":[' +
+                '{"name":"archchana","vehicleNumber":"BFG6254","priority":"health" }]}';
+               
+                const obj = JSON.parse(text);
+                document.getElementById("demo").innerHTML =
+                obj.users[0].name + " " + obj.users[0].vehicleNumber + " " + obj.users[0].priority ;
+          
             
         </script>
     </body>

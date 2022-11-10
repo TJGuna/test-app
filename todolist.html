@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>javascript</title>
+    </head>
+    <body>
+        <Div class=" bg-green-100 max-w-sm rounded px-6 pt-6 pb-6">
+        <h1>To Do List</h1>
+        <div class="container w-80 bg-purple-100">
+            <input id="inputField" type="text" class="" placeholder="">
+            <button onclick="addToDo()">Add</button>
+            <div class="to-dos" id="toDoContainer">
+            </div>
+        </div>
+    </Div>
+    <p id="demo"> </p>
+        <Script>
+            const mylist = [];
+
+            function addToDo(){
+                
+
+                var x = document.getElementById("inputField").value;
+                document.getElementById("demo").innerHTML = x;
+                mylist.push(x);
+            
+
+            
+            document.getElementById("demo").innerHTML = mylist;
+            let txt = "";
+            mylist.forEach(myFunction);
+            document.getElementById("demo").innerHTML = txt;
+            function myFunction(value, index, array) {
+            txt += value + "<br>"; 
+            }
+            }
+            
+        </Script>
+    </body>
