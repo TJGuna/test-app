@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="flex justify-center">
+    <div class="bg-sky-100 w-[500px] p-8 items-center space-y-6">
+        <div class="text-center">
+            TODO APP
+        </div>
+
+        <div class="flex justify-between space-x-2">
+            <div class="relative ">
+                <input type="text" id="todo"
+                    class=" block px-2.5 pb-2.5 pt-4 text-sm text-black border border-gray-300 rounded-[6px] border-1  appearance-none focus:ring-0 focus:border-blue-200 peer bg-white "
+                    placeholder=" " />
+                <label for="todo"
+                    class="absolute text-sm bg-white text-black  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0]  px-2 peer-focus:px-2 peer-focus:text-blue-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Add
+                    your Todo</label>
+            </div>
+            <button onclick="add()" class="bg-blue-300 rounded-[6px] px-1 ">
+                Add / Update
+            </button>
+        </div>
+
+        <div>
+            Pending Todo Items
+        </div>
+        <div class="w-full ">
+            <div class="w-full mx-auto bg-green-100 flex ">
+                <div class="w-1/2">
+                    items
+                </div>
+                <div class="w-1/4">
+                    edit
+                </div>
+                <div class="w-1/4">
+                    delete
+                </div>
+            </div>
+            <div>
+                <div id="demo"></div>
+                
+            </div>
+            
+
+        </div>
+        
+        <script>
+            let toDoList = []
+            function add() {
+                var x = document.getElementById("todo").value;
+                toDoList.push(x);
+                readingFunction();
+            }
+            function readingFunction(){
+                let text = "";
+                document.getElementById('todo').value ="";
+                for (let i = 0; i < toDoList.length; i++) {
+                     text += "<div class='flex items-center divide-y'><div class='w-1/2 text-[20px]'>" + toDoList[i] +" </div>"
+                     +"<button onclick=editFunction("+i+") class='w-1/4 m-2 py-1 rounded-[10px] px-3 bg-green-300'>edit</button>"
+                     +" <button onclick=deleteFunction("+i+") class='w-1/4 m-2 py-1 rounded-[10px] px-3 bg-red-300'>delete</button></div><br>";
+                }
+                document.getElementById('demo').innerHTML = text;
+
+            }
+            
+            function editFunction(index){
+                    console.log('index'+index);
+                    document.getElementById('todo').value = toDoList[index];
+                    toDoList.splice(index,1);
+                    
+                }
+            function deleteFunction(index){
+                toDoList.splice(index,1);
+                readingFunction();
+                
+            }
+            
+        </script>
+    </div>
+</body>
+
+</html>
